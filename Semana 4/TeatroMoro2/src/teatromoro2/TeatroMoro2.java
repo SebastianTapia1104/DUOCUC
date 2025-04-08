@@ -128,32 +128,32 @@ public class TeatroMoro2 {
                     System.out.println("1. VIP\n2. Platea Baja\n3. Platea Alta\n4. Palcos");
 
                     while (tipo){
-                        boolean seccionOcupada = false;
+                        boolean seccionOcupada = true;
                         tipoEntrada = scanner.nextInt();
                         // Validar entrada
                         switch (tipoEntrada) {
                             case 1:
                                 for (int i = 1; i < 20; i++) {
-                                    if (i == 0) {
-                                        seccionOcupada = true;
+                                    if (i != 0) {
+                                        seccionOcupada = false;
                                     }
                                 }   break;
                             case 2:
-                                for (int i = 1; i < 20; i++) {
-                                    if (i == 0) {
-                                        seccionOcupada = true;
+                                for (int i = 20; i < 40; i++) {
+                                    if (i != 0) {
+                                        seccionOcupada = false;
                                     }
                                 }   break;
                             case 3:
-                                for (int i = 1; i < 20; i++) {
-                                    if (i == 0) {
-                                        seccionOcupada = true;
+                                for (int i = 40; i < 60; i++) {
+                                    if (i != 0) {
+                                        seccionOcupada = false;
                                     }
                                 }   break;
                             case 4:
-                                for (int i = 1; i < 20; i++) {
-                                    if (i == 0) {
-                                        seccionOcupada = true;
+                                for (int i = 60; i < 80; i++) {
+                                    if (i != 0) {
+                                        seccionOcupada = false;
                                     }
                                 }   break;
                             default:
